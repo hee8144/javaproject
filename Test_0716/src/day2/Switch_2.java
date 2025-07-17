@@ -8,7 +8,7 @@ public class Switch_2 {
 		// TODO Auto-generated method stub
 		Scanner s = new Scanner(System.in);
 		System.out.print("점수입력 :");
-		int score = s.nextInt();
+		int score = s.nextInt(); 
 
 		switch (score / 10) {
 		case 10:
