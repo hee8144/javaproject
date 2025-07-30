@@ -1,4 +1,4 @@
-package Review_Day1;
+package review_Day1;
 
 import java.util.Random;
 import java.util.Scanner;

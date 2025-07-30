@@ -1,4 +1,4 @@
-package Review_Day1;
+package review_Day1;
 
 public class Arr {
 	public static void main(String[] args) {
