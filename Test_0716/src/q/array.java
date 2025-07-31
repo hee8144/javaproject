@@ -5,29 +5,19 @@ import java.util.Scanner;
 
 public class array {
 	public static void main(String[] args) {
-		/*설명: 입력된 크기 n에 대해 n x n 배열을 달팽이처럼 숫자로 채우세요.
-		제약: 배열과 조건문만 사용
-		입력 예시: n = 4		n=3				n=2
-		출력 예시:
-
-		1 (0*0)  	2(0*1)   	3(0*2)   	4(0*3)		
-		12(1*0)  	13(1*1) 	14(1*2) 	5(1*3) 	
-		11(2*0)  	16(2*1)  	15(2*2)  	6(2*3)		
-		10(3*0)   	9(3*1)   	8(3*2)  	7(3*3) 
-		*/
-		
-		/*5. 2차원 배열 회전 (시계방향 90도)
-			설명: N x N 배열을 시계 방향으로 90도 회전시켜 출력하세요.
-			제약: 새로운 배열을 만들어 회전 결과를 저장
-			입력 예시: */ 
-		/*	1(0,0) 2(0,1) 3(0,2)				7(0,1) 4(0,1) 1(2,0)
-			4(1,0) 5(1,1) 6(1,2)				8(0,1) 5(1,1) 2(2,1)
-			7(2,0) 8(2,1) 9(2,2)				9(0,2) 6(2,2) 3(2,2)
-			*/
-		
-		
-		int arr[][] = {{1,2,3},{4,5,6},{7,8,9}};
-		
+		Scanner s = new Scanner(System.in);
+		int[] arr  = new int[5];
+		System.out.println("정수 5개를 입력하세요");
+		for(int i = 0; i<arr.length;i++) {
+			arr[i] = s.nextInt();
+			System.out.println(arr[i]);
+		}
+		int temp = arr[4];
+		for(int i=arr.length-1; i>0;i--) {
+			arr[i]=arr[i-1];
+		}
+		arr[0]=temp;
+		System.out.println(Arrays.toString(arr));
 		
 	}
 }

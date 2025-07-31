@@ -5,6 +5,10 @@ import java.util.Random;
 
 public class ArrayFunc {
 
+	public static final int EVEN =0;
+	public static final int ODD =1;
+	
+	
 	// 배열의 모든 값을 음수로 만드는 메솓
 	// parameter1: 정수형배열
 
@@ -140,6 +144,19 @@ public class ArrayFunc {
 		Arrays.sort(arr);
 		minuArr(arr);
 		System.out.println(Arrays.toString(arr));
+	}
+	
+	
+	public static int arrLength(int arr[], int kind) {
+
+		int size = 0;
+		int num = kind;
+		for (int i = 0; i < arr.length; i++) {
+			if (arr[i] % 2 == num) {
+				size++;
+			}
+		}
+		return size;
 	}
 	
 	public static void main(String[] args) {
