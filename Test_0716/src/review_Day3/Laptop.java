@@ -1,4 +1,4 @@
-package review_Day3;
+	package review_Day3;
 
 public class Laptop extends Computer{
 	private double weight;
@@ -8,5 +8,9 @@ public class Laptop extends Computer{
 	}
 	public void printSpecs() {
 		System.out.println(getBrand() + "브랜드의 " +weight+" kg 노트북");
+	}
+	
+	public double getWeight() {
+		return weight;
 	}
 }
